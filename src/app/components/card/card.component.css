@@ -1,0 +1,34 @@
+.card {
+  background-color: #232323;
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card__title {
+  margin: 5px auto;
+}
+
+.card__body {
+  background-color: #616161;
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+.card__stats {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.card__stats__type {
+  background-color: coral;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
