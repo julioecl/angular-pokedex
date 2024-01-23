@@ -16,7 +16,7 @@ export class PokemonService {
     this.baseURL = environment.pokeApi
    }
   getPokemon(pokemonName:string):Observable<PokemonData>{
-    this.pokeData = this.http.get<PokemonData>(`${this.baseURL}${pokemonName}`)
+    this.pokeData = this.http.get<PokemonData>(`${this.baseURL}${pokemonName.toLowerCase()}`)
     return this.pokeData
   }
 

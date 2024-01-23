@@ -3,7 +3,8 @@
   <div class="card__title">
     <h1> {{ pokemon.name }} #{{pokemon.id}}</h1>
   </div>
-  <div class="card__body">
+  <div *ngIf="pokemon.types[0] as type"
+  class="card__body {{ type.type.name }}">
     <img [src]="pokemon.sprites" alt="{{ pokemon.name }}">
   </div>
   <div class="card__stats">
@@ -13,5 +14,6 @@
       {{ type.type.name }}
     </span>
   </div>
+  <h3 class="card__search">Busque o seu pokemón preferido!</h3>
   <input type="text" (input)="getPokemon($any($event.target).value)">
 </div>
